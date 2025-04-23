@@ -35,7 +35,7 @@ This project was built as a congratulatory gift to two friends who started their
 
 ## 🔒 Future Improvements
 
-- Custom domain (`talazar.co.il`, `morzehavi.com`)
+- Custom domain (`talazar.co.il`)
 - SEO & social media metadata
 - Analytics integration
 - Full React conversion for dynamic handling
