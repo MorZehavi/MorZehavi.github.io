@@ -1,39 +1,136 @@
-# Financial Landing Page
+```markdown
+# 🌐 אתר נחיתה – מור זהבי | תכנון וליווי פיננסי
 
-A modern and responsive landing page built for independent financial advisors, showcasing their services in a clean and professional way.
+ברוכים הבאים לדף הנחיתה הרשמי של **מור זהבי**, מלווה פיננסי וסוכן הפועל במסגרת בית הסוכן "יסודות פיננסים".  
+האתר מציג את שירותיו המרכזיים, מאפשר יצירת קשר בצורה נוחה, ומספק מידע חיוני ללקוחות חדשים ומתעניינים.
 
-## 🌐 Live Demo
-[View Website](https://guybenja.github.io/financial-landing/)
-
-## ✨ Features
-- Responsive design for desktop and mobile
-- Elegant typography and color palette
-- Call-to-action buttons for contact
-- Simple and lightweight structure for fast loading
-
-## 🛠️ Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-
-## 📸 Preview
-![Landing Page Preview](assets/preview.png)
-
-## 📂 Project Structure
-```
-financial-landing/
-│
-├── index.html        # Main HTML file
-├── assets/           # Images, icons, and other media
-├── css/              # Stylesheets
-└── js/               # JavaScript files
-```
-
-## 📬 Contact
-If you'd like to collaborate or have any questions:
-- Email: guybin56@gmail.com
-- LinkedIn: [Guy Binyamin](https://www.linkedin.com/in/guy-binyamin-1a4323286/)
-- GitHub: [GuyBenja](https://github.com/GuyBenja)
+האתר נבנה בשפה ברורה, נגיש, ומותאם לתקן הישראלי WCAG 2.0 AA.
 
 ---
-© Guy Binyamin. All rights reserved.
+
+## 🚀 Live Website
+
+האתר זמין בכתובת:
+
+👉 **https://MorZehavi.github.io**
+
+---
+
+## 📌 תכונות מרכזיות
+
+- דף נחיתה מודרני ונקי עם עיצוב TailwindCSS
+- ניווט חלק ודינמי בין מקטעי הדף
+- טופס יצירת קשר (באמצעות Formspree)
+- ארבעה דפי שירות מקצועיים:
+  - תכנון פרישה
+  - ניהול פיננסי
+  - השקעות אלטרנטיביות
+  - Family Office
+- עמודי חובה משפטיים:
+  - מדיניות פרטיות
+  - תנאי שימוש
+  - הצהרת נגישות
+  - דיסקליימר וגילוי נאות
+- מותאם לנייד, טאבלט ומחשב
+- נגישות: ALT, ARIA, מבנה סמנטי מלא, כותרות היררכיות
+- תיאורים וניסוחים תואמי רגולציה (ללא מתן ייעוץ משפטי/מס/השקעות)
+
+---
+
+## 🧱 מבנה הפרויקט
+
+MorZehavi.github.io/
+│
+├── index.html
+├── privacy.html
+├── accessibility.html
+├── terms.html
+├── disclaimer.html
+│
+├── services/
+│ ├── retirement.html
+│ ├── financial.html
+│ ├── investments.html
+│ └── family_office.html
+│
+└── MF_Picture.webp
+```
+
+---
+
+## 🛠 טכנולוגיות וכלים
+
+- **HTML5 + TailwindCSS** – בנייה מהירה ורספונסיבית
+- **Phosphor Icons** – אייקונים נקיים ונגישים
+- **Formspree** – לשליחת טפסים ללא Backend
+- **GitHub Pages** – אירוח האתר ללא עלות
+- **Google Fonts (Alef)** – תמיכה מלאה בעברית
+
+---
+
+## 📬 טופס יצירת קשר (Formspree)
+
+הטופס שולח הודעות לכתובת הדוא"ל:
+📧 **[mor@y-f.co.il](mailto:mor@y-f.co.il)**
+
+באמצעות endpoint:
+
+```
+https://formspree.io/f/manoyjzq
+```
+
+ניתן לשנות בכל עת דרך חשבון Formspree של מור.
+
+---
+
+## ♿ הצהרת נגישות
+
+האתר פותח בהתאם להנחיות נגישות WCAG 2.0 AA, כולל:
+
+- שימוש ב־ARIA Labels
+- ALT לתמונות
+- ניווט מלא באמצעות מקלדת
+- היררכיית כותרות מסודרת
+- פלטת צבעים עם ניגודיות תקינה
+
+---
+
+## ⚖️ מידע משפטי
+
+האתר כולל את כל הדפים הנדרשים לפי חוק הגנת הצרכן, תקנות הנגישות, והנחיות רשות שוק ההון:
+
+- דיסקליימר – אי־אחריות פיננסית
+- גילוי נאות – תגמולים וזיקות לגופים מוסדיים
+- תנאי שימוש
+- מדיניות פרטיות
+- הצהרת נגישות
+
+התוכן המופיע באתר הוא מידע כללי בלבד ואינו מהווה ייעוץ פיננסי/משפטי/מס.
+
+---
+
+## 🧭 הוראות הפעלה / פיתוח
+
+### 🔹 הרצה מקומית
+
+ניתן לפתוח את `index.html` ישירות בדפדפן.
+
+### 🔹 העלאה ל־GitHub Pages
+
+GitHub Pages מוגדר להציג את ענף `main`.
+כל שינוי שתבצע ב־main יופיע באתר באופן אוטומטי בתוך שניות.
+
+---
+
+## 📞 יצירת קשר
+
+**מור זהבי – תכנון וליווי פיננסי**
+📧 [mor@y-f.co.il](mailto:mor@y-f.co.il)
+📍 ישראל
+
+---
+
+## 📄 רישוי
+
+האתר מיועד לשימוש עסקי של מור זהבי בלבד.
+אין להעתיק, להפיץ או להשתמש בתוכן ללא אישור.

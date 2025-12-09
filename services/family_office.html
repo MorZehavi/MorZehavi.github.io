@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Family Office - טל עזר</title>
+  <title>Family Office - מור זהבי</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -13,10 +13,11 @@
   </style>
 </head>
 <body class="bg-white text-gray-800">
+
   <!-- Navigation Bar -->
   <header class="fixed w-full top-0 right-0 z-50 bg-black bg-opacity-80 shadow-md">
     <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="../index.html" class="text-yellow-500 font-bold text-2xl">טל עזר</a>
+      <a href="../index.html" class="text-yellow-500 font-bold text-2xl">מור זהבי</a>
       <nav class="space-x-6 space-x-reverse">
         <a href="../index.html#hero" class="text-white hover:text-yellow-500 transition">ראשי</a>
         <a href="../index.html#about" class="text-white hover:text-yellow-500 transition">אודות</a>
@@ -26,7 +27,11 @@
     </div>
   </header>
 
-  <main class="pt-28 px-6 pb-16 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
+  <main
+    class="pt-28 px-6 pb-16 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10"
+    role="main"
+    aria-labelledby="page-title"
+  >
     <!-- Sidebar Navigation -->
     <aside class="lg:w-1/5 hidden lg:block">
       <div class="sticky top-32 bg-gray-50 p-4 rounded-lg shadow-sm border text-sm">
@@ -41,46 +46,85 @@
 
     <!-- Main Content -->
     <section class="lg:w-4/5">
-      <h1 class="text-4xl font-bold text-yellow-600 mb-6 flex items-center gap-2"><i class="ph ph-house"></i> Family Office</h1>
+      <h1 id="page-title" class="text-4xl font-bold text-yellow-600 mb-6 flex items-center gap-2">
+        <i class="ph ph-buildings" aria-hidden="true"></i>
+        Family Office
+      </h1>
 
-      <p class="text-lg leading-relaxed mb-8">
-        יציבות כלכלית מעניקה שקט נפשי, לך ולמשפחה שלך. כחלק ממעטפת השירותים שאנו מציעים, נלווה אתכם בעולם הרחב של תכנון פיננסי ואופטימיזציה של הנכסים המשפחתיים לאורך השנים.
-      </p>
+      <!-- Placeholder for a future professional photo / illustration -->
+      <div class="w-full h-72 bg-gray-100 flex items-center justify-center rounded-lg mb-10">
+        <span class="text-gray-400">כאן תופיע תמונה או תרשים Family Office בעתיד 🏢</span>
+      </div>
 
       <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i class="ph ph-lighthouse"></i> למה Family Office?</h2>
+        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+          <i class="ph ph-users-three" aria-hidden="true"></i>
+          למה Family Office?
+        </h2>
         <p class="text-lg leading-relaxed text-gray-700">
-          ניהול עושר משפחתי מצריך ניסיון בתחומים מגוונים: תכנון כלכלי, השקעות, פנסיה, דיני ירושה, תכנון מס ועוד. אנו מציעים ליווי כוללני, אישי ודיסקרטי.
+          ניהול עושר משפחתי מצריך הסתכלות רחבה: תכנון כלכלי, השקעות, פנסיה, היבטים הקשורים להעברה בין דורית
+          והיבטי מס כלליים. Family Office מאפשר לרכז את התמונה הפיננסית המשפחתית במקום אחד, לבנות סדר עדיפויות
+          ולתאם בין כלל הגורמים המעורבים – מהחסכונות וההשקעות ועד לניהול התזרים.
         </p>
       </section>
 
       <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i class="ph ph-tree-structure"></i> מרכיבי השירות</h2>
-        <ul class="list-disc pr-6 text-gray-700 space-y-2">
-          <li>היכרות ובירור צרכים</li>
-          <li>מיפוי כלל הנכסים וההון המשפחתי</li>
-          <li>בניית תוכנית כלכלית לטווח ארוך</li>
-          <li>תכנון ירושה והעברה בין דורית</li>
-          <li>הגדרת פרופיל סיכון אישי</li>
-          <li>תמהיל השקעות עם פיזור סיכונים</li>
-          <li>בחינת מס והטבות אפשריות</li>
-          <li>הגנות ביטוחיות ותכנון עתידי</li>
-          <li>ליווי שוטף ותיעוד מרוכז של כלל הנכסים</li>
+        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+          <i class="ph ph-list-checks" aria-hidden="true"></i>
+          מה כולל הליווי?
+        </h2>
+        <ul class="list-disc pr-6 text-gray-700 space-y-2 text-lg">
+          <li>מיפוי מלא של הנכסים, ההתחייבויות וההכנסות המשפחתיות</li>
+          <li>בניית תמונת מצב כוללת ותחזית תזרימית לשנים קדימה</li>
+          <li>סיוע בתכנון העברה בין דורית, בשיתוף גורמים מקצועיים בעת הצורך</li>
+          <li>בחינת היבטי מס כלליים והשלכות פיננסיות של החלטות שונות</li>
+          <li>ליווי בקבלת החלטות לגבי השקעות, חיסכון וניהול סיכונים</li>
+          <li>קביעת סדרי עדיפויות בין מטרות קצרות וארוכות טווח</li>
         </ul>
       </section>
 
-      <!-- Image Placeholder -->
-      <div class="w-full h-72 bg-gray-100 flex items-center justify-center rounded-lg mb-10">
-        <span class="text-gray-400">כאן תופיע תמונה או תרשים בעתיד 📊</span>
-      </div>
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
+          <i class="ph ph-hand-heart" aria-hidden="true"></i>
+          איך זה עובד בפועל?
+        </h2>
+        <p class="text-lg leading-relaxed text-gray-700">
+          התהליך מתחיל בהיכרות מעמיקה עם המשפחה, ההיסטוריה הכלכלית, הצרכים והמטרות. לאחר מכן נאסף המידע הפיננסי,
+          נבנית תוכנית עבודה הדרגתית, ובהמשך מתקיים ליווי מתמשך בהתאם לשינויים בחיים, בהכנסות ובשוק.
+          המטרה היא לאפשר קבלת החלטות רגועה, מתוך הבנה ושליטה.
+        </p>
+      </section>
 
       <!-- Call to Action -->
       <div class="text-center mt-12">
-        <a href="../index.html#contact" class="inline-block px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-full hover:bg-yellow-600 transition">
-          קבעו פגישת ייעוץ אישי
+        <a href="../index.html#contact"
+           class="inline-block px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-full hover:bg-yellow-600 transition">
+          קבעו פגישת ליווי אישי
         </a>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-6 text-gray-500 bg-white border-t">
+    <div>© 2025 מור זהבי. כל הזכויות שמורות.</div>
+
+    <div class="mt-2 text-xs text-gray-600 leading-relaxed">
+      <p>
+        מור זהבי פועל כסוכן בתחום הפיננסי במסגרת בית הסוכן "יסודות פיננסים".
+      </p>
+      <p class="mt-1">
+        מספר הרישיון יפורסם באתר לאחר קבלתו מרשות שוק ההון.
+      </p>
+    </div>
+
+    <div class="mt-3 text-xs space-x-4 space-x-reverse">
+      <a href="../privacy.html" class="hover:text-yellow-600">מדיניות פרטיות</a> |
+      <a href="../accessibility.html" class="hover:text-yellow-600">הצהרת נגישות</a> |
+      <a href="../terms.html" class="hover:text-yellow-600">תנאי שימוש</a> |
+      <a href="../disclaimer.html" class="hover:text-yellow-600">דיסקליימר וגילוי נאות</a>
+    </div>
+  </footer>
+
 </body>
 </html>
