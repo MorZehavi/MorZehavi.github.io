@@ -795,3 +795,104 @@ label.checkbox .checkbox-text{flex:1 1 260px; min-width:0}
   width: 42px !important;
   height: 42px !important;
 }
+/* =========================
+   Mobile menu (burger) – stable on phones
+   ========================= */
+
+.header { position: sticky; top: 0; } /* כבר יש אצלך, רק לוודא */
+
+.mobile-panel{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--blue);
+  border-top: 1px solid rgba(255,255,255,.12);
+  z-index: 999;
+  max-height: calc(100vh - 78px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-panel[data-open="true"]{
+  display: block;
+}
+
+.mobile-panel a{
+  display: block;
+  color: #fff;
+  padding: 16px 20px;
+  font-weight: 900;
+}
+
+.mobile-panel a:hover{
+  background: rgba(255,255,255,.10);
+}
+
+/* כשפתוח – לא לגלול את הדף מאחורה */
+body.no-scroll{
+  overflow: hidden;
+}
+
+/* =========================================================
+   FINAL OVERRIDES – Mobile menu stability (put at END of file)
+   ========================================================= */
+
+/* Always keep header above everything */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* On mobile: hide desktop nav + CTA, show burger */
+@media (max-width: 900px){
+  .header .nav,
+  .header .header-cta{
+    display: none !important;
+  }
+
+  .header .burger{
+    display: inline-flex !important;
+  }
+}
+
+/* Mobile panel as full-screen overlay (prevents "white strip" + weird widths) */
+.mobile-panel{
+  position: fixed;
+  inset: 0;
+  background: var(--blue);
+  z-index: 1100;
+
+  /* keep header visible, panel starts under it */
+  padding-top: 78px;
+
+  /* closed by default */
+  transform: translateX(-105%);
+  transition: transform .18s ease;
+
+  /* allow scroll inside menu */
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-panel.show{
+  transform: translateX(0);
+}
+
+.mobile-panel a{
+  display: block;
+  color: #fff;
+  padding: 16px 20px;
+  font-weight: 900;
+}
+
+.mobile-panel a:hover{
+  background: rgba(255,255,255,.10);
+}
+
+/* prevent background scroll when menu open */
+body.no-scroll{
+  overflow: hidden;
+}

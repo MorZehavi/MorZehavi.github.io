@@ -1,15 +1,30 @@
 (function(){
   const burger = document.querySelector('[data-burger]');
-  const panel = document.querySelector('[data-mobile-panel]');
-  if(burger && panel){
-    burger.addEventListener('click', () => {
-      const expanded = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!expanded));
-      panel.classList.toggle('show');
-    });
-  }
-})();
+  const panel  = document.querySelector('[data-mobile-panel]');
+  if(!burger || !panel) return;
 
+  function setOpen(isOpen){
+    burger.setAttribute('aria-expanded', String(isOpen));
+    panel.classList.toggle('show', isOpen);
+    document.body.classList.toggle('no-scroll', isOpen);
+  }
+
+  burger.addEventListener('click', () => {
+    const isOpen = burger.getAttribute('aria-expanded') === 'true';
+    setOpen(!isOpen);
+  });
+
+  // Close when clicking a menu link
+  panel.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if(a) setOpen(false);
+  });
+
+  // Close with ESC
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') setOpen(false);
+  });
+})();
 (function(){
   const el = document.getElementById('rotating-word');
   if(!el) return;
