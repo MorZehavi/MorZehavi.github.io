@@ -1,130 +1,118 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+
+<html dir="rtl" lang="he">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Family Office - מור זהבי</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <style>
-    body { font-family: 'Alef', sans-serif; }
-    summary { cursor: pointer; }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Family Office - מור זהבי</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/site.css" rel="stylesheet"/>
+<style>
+    /* Small tweaks for legacy markup */
+    ul { color: var(--muted); line-height:1.9; }
+    li { margin-bottom:8px; }
+    details { border:1px solid rgba(255,255,255,.10); border-radius:16px; padding:14px 16px; background: rgba(0,0,0,.18); margin:12px 0; }
+    summary { cursor:pointer; font-weight:800; color: var(--text); }
   </style>
 </head>
-<body class="bg-white text-gray-800">
+<body>
+<header class="header">
+<div class="container header-inner">
+<a class="header-cta" href="../index.html#contact">יצירת קשר</a>
+<nav aria-label="ניווט ראשי" class="nav">
+<a href="../index.html#top">ראשי</a>
+<a href="../index.html#about">אודות</a>
+<a href="../index.html#services">השירותים שלנו</a>
+</nav>
+<a aria-label="מור זהבי" class="brand" href="../index.html#top">
+<span>
+<span class="brand-title">מור זהבי</span>
+<span class="brand-sub">תכנון וליווי פיננסי</span>
+</span>
+</a>
+<button aria-expanded="false" aria-label="פתח/סגור תפריט" class="burger" data-burger="" type="button">☰</button>
+</div>
+<div class="mobile-panel" data-mobile-panel="">
+<a href="../index.html#top">ראשי</a>
+<a href="../index.html#about">אודות</a>
+<a href="../index.html#services">השירותים שלנו</a>
+<a class="cta" href="../index.html#contact">יצירת קשר</a>
+</div>
+</header>
 
-  <!-- Navigation Bar -->
-  <header class="fixed w-full top-0 right-0 z-50 bg-black bg-opacity-80 shadow-md">
-    <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="../index.html" class="text-yellow-500 font-bold text-2xl">מור זהבי</a>
-      <nav class="space-x-6 space-x-reverse">
-        <a href="../index.html#hero" class="text-white hover:text-yellow-500 transition">ראשי</a>
-        <a href="../index.html#about" class="text-white hover:text-yellow-500 transition">אודות</a>
-        <a href="../index.html#services" class="text-white hover:text-yellow-500 transition">שירותים</a>
-        <a href="../index.html#contact" class="text-white hover:text-yellow-500 transition">צור קשר</a>
-      </nav>
+<div class="hero-card service-card-pro" style="padding:28px">
+
+  <div class="service-title-wrap">
+    <p class="kicker" style="margin:0 0 8px">השירותים שלנו</p>
+    <h1 class="service-title" id="page-title" style="margin-top:0">Family Office</h1>
+    <p class="service-subtitle">
+     יציבות כלכלית מעניקה שקט נפשי, לך ולמשפחה שלך
+    </p>
+  </div>
+
+  <div class="service-divider"></div>
+
+  <section class="service-block">
+    <h2 class="service-h">למה Family Office?</h2>
+    <p class="service-p">
+      ניהול עושר משפחתי מצריך הסתכלות רחבה: תכנון כלכלי, השקעות, פנסיה, היבטים הקשורים להעברה בין דורית
+      והיבטי מס כלליים. Family Office מאפשר לרכז את התמונה הפיננסית המשפחתית במקום אחד, לבנות סדר עדיפויות
+      ולתאם בין כלל הגורמים המעורבים – מהחסכונות וההשקעות ועד לניהול התזרים.
+    </p>
+  </section>
+
+  <div class="service-divider soft"></div>
+
+  <section class="service-block">
+    <h2 class="service-h">מה כולל הליווי?</h2>
+
+    <div class="service-list">
+      <div class="service-li">מיפוי מלא של הנכסים, ההתחייבויות וההכנסות המשפחתיות</div>
+      <div class="service-li">בניית תמונת מצב כוללת ותחזית תזרימית לשנים קדימה</div>
+      <div class="service-li">סיוע בתכנון העברה בין דורית, בשיתוף גורמים מקצועיים בעת הצורך</div>
+      <div class="service-li">בחינת היבטי מס כלליים והשלכות פיננסיות של החלטות שונות</div>
+      <div class="service-li">ליווי בקבלת החלטות לגבי השקעות, חיסכון וניהול סיכונים</div>
+      <div class="service-li">קביעת סדרי עדיפויות בין מטרות קצרות וארוכות טווח</div>
     </div>
-  </header>
+  </section>
 
-  <main
-    class="pt-28 px-6 pb-16 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10"
-    role="main"
-    aria-labelledby="page-title"
-  >
-    <!-- Sidebar Navigation -->
-    <aside class="lg:w-1/5 hidden lg:block">
-      <div class="sticky top-32 bg-gray-50 p-4 rounded-lg shadow-sm border text-sm">
-        <h3 class="text-lg font-semibold mb-3 text-yellow-600">שירותים נוספים</h3>
-        <ul class="space-y-2 text-gray-700">
-          <li><a href="retirement.html" class="hover:text-yellow-600">תכנון פרישה</a></li>
-          <li><a href="investments.html" class="hover:text-yellow-600">השקעות אלטרנטיביות</a></li>
-          <li><a href="financial.html" class="hover:text-yellow-600">ניהול פיננסי</a></li>
-        </ul>
-      </div>
-    </aside>
+  <div class="service-divider soft"></div>
 
-    <!-- Main Content -->
-    <section class="lg:w-4/5">
-      <h1 id="page-title" class="text-4xl font-bold text-yellow-600 mb-6 flex items-center gap-2">
-        <i class="ph ph-buildings" aria-hidden="true"></i>
-        Family Office
-      </h1>
+  <section class="service-block">
+    <h2 class="service-h">איך זה עובד בפועל?</h2>
+    <p class="service-p">
+      התהליך מתחיל בהיכרות מעמיקה עם המשפחה, ההיסטוריה הכלכלית, הצרכים והמטרות. לאחר מכן נאסף המידע הפיננסי,
+      נבנית תוכנית עבודה הדרגתית, ובהמשך מתקיים ליווי מתמשך בהתאם לשינויים בחיים, בהכנסות ובשוק.
+      המטרה היא לאפשר קבלת החלטות רגועה, מתוך הבנה ושליטה.
+    </p>
+  </section>
 
-      <!-- Placeholder for a future professional photo / illustration -->
-      <div class="w-full h-72 bg-gray-100 flex items-center justify-center rounded-lg mb-10">
-        <span class="text-gray-400">כאן תופיע תמונה או תרשים Family Office בעתיד 🏢</span>
-      </div>
+  <div class="service-divider"></div>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-users-three" aria-hidden="true"></i>
-          למה Family Office?
-        </h2>
-        <p class="text-lg leading-relaxed text-gray-700">
-          ניהול עושר משפחתי מצריך הסתכלות רחבה: תכנון כלכלי, השקעות, פנסיה, היבטים הקשורים להעברה בין דורית
-          והיבטי מס כלליים. Family Office מאפשר לרכז את התמונה הפיננסית המשפחתית במקום אחד, לבנות סדר עדיפויות
-          ולתאם בין כלל הגורמים המעורבים – מהחסכונות וההשקעות ועד לניהול התזרים.
-        </p>
-      </section>
+  <div class="service-cta">
+    <a class="btn primary" href="../index.html#contact">לתיאום פגישה</a>
+    <a class="btn" href="../index.html#services">חזרה לשירותים</a>
+  </div>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-list-checks" aria-hidden="true"></i>
-          מה כולל הליווי?
-        </h2>
-        <ul class="list-disc pr-6 text-gray-700 space-y-2 text-lg">
-          <li>מיפוי מלא של הנכסים, ההתחייבויות וההכנסות המשפחתיות</li>
-          <li>בניית תמונת מצב כוללת ותחזית תזרימית לשנים קדימה</li>
-          <li>סיוע בתכנון העברה בין דורית, בשיתוף גורמים מקצועיים בעת הצורך</li>
-          <li>בחינת היבטי מס כלליים והשלכות פיננסיות של החלטות שונות</li>
-          <li>ליווי בקבלת החלטות לגבי השקעות, חיסכון וניהול סיכונים</li>
-          <li>קביעת סדרי עדיפויות בין מטרות קצרות וארוכות טווח</li>
-        </ul>
-      </section>
+</div>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-hand-heart" aria-hidden="true"></i>
-          איך זה עובד בפועל?
-        </h2>
-        <p class="text-lg leading-relaxed text-gray-700">
-          התהליך מתחיל בהיכרות מעמיקה עם המשפחה, ההיסטוריה הכלכלית, הצרכים והמטרות. לאחר מכן נאסף המידע הפיננסי,
-          נבנית תוכנית עבודה הדרגתית, ובהמשך מתקיים ליווי מתמשך בהתאם לשינויים בחיים, בהכנסות ובשוק.
-          המטרה היא לאפשר קבלת החלטות רגועה, מתוך הבנה ושליטה.
-        </p>
-      </section>
 
-      <!-- Call to Action -->
-      <div class="text-center mt-12">
-        <a href="../index.html#contact"
-           class="inline-block px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-full hover:bg-yellow-600 transition">
-          קבעו פגישת ליווי אישי
-        </a>
-      </div>
-    </section>
-  </main>
+<footer class="footer">
+<div class="container">
+<div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center;">
+<div>© כל הזכויות שמורות ל־מור זהבי</div>
+<div style="display:flex; gap:14px; flex-wrap:wrap;">
+<a href="../footer-pages/privacy.html">מדיניות פרטיות</a>
+<a href="../footer-pages/terms.html">תנאי שימוש</a>
+<a href="../footer-pages/accessibility.html">הצהרת נגישות</a>
+<a href="../footer-pages/disclaimer.html">גילוי נאות</a>
+</div>
+</div>
+</div>
+</footer>
 
-  <!-- Footer -->
-  <footer class="text-center text-sm py-6 text-gray-500 bg-white border-t">
-    <div>© 2025 מור זהבי. כל הזכויות שמורות.</div>
-
-    <div class="mt-2 text-xs text-gray-600 leading-relaxed">
-      <p>
-        מור זהבי פועל כסוכן בתחום הפיננסי במסגרת בית הסוכן "יסודות פיננסים".
-      </p>
-      <p class="mt-1">
-        מספר הרישיון יפורסם באתר לאחר קבלתו מרשות שוק ההון.
-      </p>
-    </div>
-
-    <div class="mt-3 text-xs space-x-4 space-x-reverse">
-      <a href="../privacy.html" class="hover:text-yellow-600">מדיניות פרטיות</a> |
-      <a href="../accessibility.html" class="hover:text-yellow-600">הצהרת נגישות</a> |
-      <a href="../terms.html" class="hover:text-yellow-600">תנאי שימוש</a> |
-      <a href="../disclaimer.html" class="hover:text-yellow-600">דיסקליימר וגילוי נאות</a>
-    </div>
-  </footer>
-
+<script src="../assets/site.js"></script>
 </body>
 </html>

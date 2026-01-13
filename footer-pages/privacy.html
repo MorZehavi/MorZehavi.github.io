@@ -2,17 +2,43 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>מדיניות פרטיות – מור זהבי</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Alef', sans-serif; }
-  </style>
+  <title>מדיניות פרטיות - מור זהבי</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css" />
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <div class="max-w-3xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-bold mb-6 text-right">מדיניות פרטיות</h1>
+<body>
+
+<header class="header">
+<div class="container header-inner">
+<a class="header-cta" href="/#contact">יצירת קשר</a>
+<nav aria-label="ניווט ראשי" class="nav">
+<a href="/#top">ראשי</a>
+<a href="/#about">אודות</a>
+<a href="/#services">השירותים שלנו</a>
+</nav>
+<a aria-label="מור זהבי" class="brand" href="/#top">
+<span>
+<span class="brand-title">מור זהבי</span>
+<span class="brand-sub">תכנון וליווי פיננסי</span>
+</span>
+</a>
+<button aria-expanded="false" aria-label="פתח/סגור תפריט" class="burger" data-burger="" type="button">☰</button>
+</div>
+<div class="mobile-panel" data-mobile-panel="">
+<a href="/#top">ראשי</a>
+<a href="/#about">אודות</a>
+<a href="/#services">השירותים שלנו</a>
+<a class="cta" href="/#contact">יצירת קשר</a>
+</div>
+</header>r>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+    <div class="hero-card" style="padding:22px">
+      <h1 class="text-3xl font-bold mb-6 text-right">מדיניות פרטיות</h1>
 
     <p class="mb-4">
       מדיניות פרטיות זו מתארת כיצד אנו אוספים, משתמשים ושומרים מידע אישי הנמסר לנו דרך אתר זה.
@@ -77,8 +103,26 @@
     </p>
 
     <div class="mt-6">
-      <a href="index.html" class="text-yellow-700 underline">חזרה לדף הבית</a>
+      <a href="../index.html" class="btn gold">חזרה לדף הבית</a>
     </div>
   </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center;">
+      <div>© כל הזכויות שמורות ל־מור זהבי</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="privacy.html">מדיניות פרטיות</a>
+        <a href="terms.html">תנאי שימוש</a>
+        <a href="accessibility.html">הצהרת נגישות</a>
+        <a href="disclaimer.html">גילוי נאות</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../assets/site.js"></script>
 </body>
 </html>

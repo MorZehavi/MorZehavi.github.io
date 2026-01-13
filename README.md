@@ -1,136 +1,134 @@
-```markdown
-# 🌐 אתר נחיתה – מור זהבי | תכנון וליווי פיננסי
+# Mor Zehavi – Financial Planning & Advisory Landing Page
 
-ברוכים הבאים לדף הנחיתה הרשמי של **מור זהבי**, מלווה פיננסי וסוכן הפועל במסגרת בית הסוכן "יסודות פיננסים".  
-האתר מציג את שירותיו המרכזיים, מאפשר יצירת קשר בצורה נוחה, ומספק מידע חיוני ללקוחות חדשים ומתעניינים.
+A premium, fully responsive, and accessibility-aware landing page built as a **personal gift project** for a close friend who launched his independent career as a certified financial and pension advisor.
 
-האתר נבנה בשפה ברורה, נגיש, ומותאם לתקן הישראלי WCAG 2.0 AA.
+This website is designed to serve as a **brand presence**, **trust builder**, and **client entry point**, providing clear information about services, values, and ways to get in touch.
 
 ---
 
-## 🚀 Live Website
+## ✨ Project Goals
 
-האתר זמין בכתובת:
-
-👉 **https://MorZehavi.github.io**
-
----
-
-## 📌 תכונות מרכזיות
-
-- דף נחיתה מודרני ונקי עם עיצוב TailwindCSS
-- ניווט חלק ודינמי בין מקטעי הדף
-- טופס יצירת קשר (באמצעות Formspree)
-- ארבעה דפי שירות מקצועיים:
-  - תכנון פרישה
-  - ניהול פיננסי
-  - השקעות אלטרנטיביות
-  - Family Office
-- עמודי חובה משפטיים:
-  - מדיניות פרטיות
-  - תנאי שימוש
-  - הצהרת נגישות
-  - דיסקליימר וגילוי נאות
-- מותאם לנייד, טאבלט ומחשב
-- נגישות: ALT, ARIA, מבנה סמנטי מלא, כותרות היררכיות
-- תיאורים וניסוחים תואמי רגולציה (ללא מתן ייעוץ משפטי/מס/השקעות)
+- Create a **clean, premium-looking brand website**
+- Maintain **high accessibility standards** (keyboard navigation, contrast, semantics)
+- Fully responsive across all screen sizes
+- Simple, fast, and static (no frameworks)
+- Elegant UI with a "quiet luxury" tone
+- Easy to maintain and deploy
 
 ---
 
-## 🧱 מבנה הפרויקט
+## 🧠 Philosophy
 
-MorZehavi.github.io/
-│
+This project follows a few core principles:
+
+- **Less noise, more clarity**
+- **Trust-first design**
+- **Human-centered UX**
+- **No unnecessary animations or distractions**
+- **Strong typography hierarchy**
+- **Consistent spacing and rhythm**
+
+---
+
+## 🧩 Features
+
+- Sticky responsive header
+- Mobile hamburger navigation
+- Services section with custom SVG icons
+- Individual service pages
+- Contact form (Formspree integration)
+- Fully responsive layout
+- Keyboard navigation support
+- Focus-visible styles
+- Semantic HTML structure
+- Footer legal pages (privacy, terms, accessibility, disclaimer)
+
+---
+
+## ♿ Accessibility
+
+This website was built with accessibility in mind:
+
+- Keyboard navigation (Tab, Shift+Tab, Enter)
+- Clear focus states
+- Proper heading hierarchy
+- Form labels and required fields
+- High contrast colors
+- Readable font sizes
+- Responsive behavior
+
+An official accessibility statement page is included.
+
+---
+
+## 📁 Folder Structure
+
+```
+/
 ├── index.html
-├── privacy.html
-├── accessibility.html
-├── terms.html
-├── disclaimer.html
-│
 ├── services/
-│ ├── retirement.html
-│ ├── financial.html
-│ ├── investments.html
-│ └── family_office.html
-│
-└── MF_Picture.webp
+│   ├── family_office.html
+│   ├── retirement.html
+│   ├── investments.html
+│   └── financial.html
+├── footer-pages/
+│   ├── privacy.html
+│   ├── terms.html
+│   ├── accessibility.html
+│   └── disclaimer.html
+├── assets/
+│   ├── site.css
+│   └── site.js
+└── README.md
 ```
 
 ---
 
-## 🛠 טכנולוגיות וכלים
+## 🛠 Tech Stack
 
-- **HTML5 + TailwindCSS** – בנייה מהירה ורספונסיבית
-- **Phosphor Icons** – אייקונים נקיים ונגישים
-- **Formspree** – לשליחת טפסים ללא Backend
-- **GitHub Pages** – אירוח האתר ללא עלות
-- **Google Fonts (Alef)** – תמיכה מלאה בעברית
-
----
-
-## 📬 טופס יצירת קשר (Formspree)
-
-הטופס שולח הודעות לכתובת הדוא"ל:
-📧 **[mor@y-f.co.il](mailto:mor@y-f.co.il)**
-
-באמצעות endpoint:
-
-```
-https://formspree.io/f/manoyjzq
-```
-
-ניתן לשנות בכל עת דרך חשבון Formspree של מור.
+- HTML5
+- CSS3 (Custom properties, Grid, Flexbox)
+- Vanilla JavaScript
+- Google Fonts (Heebo)
+- Formspree (contact form)
 
 ---
 
-## ♿ הצהרת נגישות
+## 🚀 Deployment
 
-האתר פותח בהתאם להנחיות נגישות WCAG 2.0 AA, כולל:
+This is a static website and can be deployed easily via:
 
-- שימוש ב־ARIA Labels
-- ALT לתמונות
-- ניווט מלא באמצעות מקלדת
-- היררכיית כותרות מסודרת
-- פלטת צבעים עם ניגודיות תקינה
-
----
-
-## ⚖️ מידע משפטי
-
-האתר כולל את כל הדפים הנדרשים לפי חוק הגנת הצרכן, תקנות הנגישות, והנחיות רשות שוק ההון:
-
-- דיסקליימר – אי־אחריות פיננסית
-- גילוי נאות – תגמולים וזיקות לגופים מוסדיים
-- תנאי שימוש
-- מדיניות פרטיות
-- הצהרת נגישות
-
-התוכן המופיע באתר הוא מידע כללי בלבד ואינו מהווה ייעוץ פיננסי/משפטי/מס.
+- GitHub Pages
+- Netlify
+- Vercel
+- Any static hosting
 
 ---
 
-## 🧭 הוראות הפעלה / פיתוח
+## 🎁 About This Project
 
-### 🔹 הרצה מקומית
+This website was built as a **personal gift** and professional showcase for a close friend starting his independent career.
 
-ניתן לפתוח את `index.html` ישירות בדפדפן.
+The goal was to create something:
 
-### 🔹 העלאה ל־GitHub Pages
-
-GitHub Pages מוגדר להציג את ענף `main`.
-כל שינוי שתבצע ב־main יופיע באתר באופן אוטומטי בתוך שניות.
-
----
-
-## 📞 יצירת קשר
-
-**מור זהבי – תכנון וליווי פיננסי**
-📧 [mor@y-f.co.il](mailto:mor@y-f.co.il)
-📍 ישראל
+- Useful
+- Respectful
+- Elegant
+- Practical
+- And long-term maintainable
 
 ---
 
-## 📄 רישוי
+## 👨‍💻 Credits
 
-האתר מיועד לשימוש עסקי של מור זהבי בלבד.
-אין להעתיק, להפיץ או להשתמש בתוכן ללא אישור.
+Design & Development: **Guy Binyamin**
+
+---
+
+## 📄 License
+
+This project is private and custom-made for a specific client. Not intended for resale or redistribution.
+
+---
+
+If you have questions or want a similar project built — feel free to reach out.

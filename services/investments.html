@@ -1,136 +1,208 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html dir="rtl" lang="he">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>השקעות אלטרנטיביות - מור זהבי</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="../assets/site.css" rel="stylesheet"/>
+
   <style>
-    body { font-family: 'Alef', sans-serif; }
-    summary { cursor: pointer; }
+    /* Small tweaks for legacy markup */
+    ul { color: var(--muted); line-height: 1.9; }
+    li { margin-bottom: 8px; }
+    details { border: 1px solid rgba(255,255,255,.10); border-radius: 16px; padding: 14px 16px; background: rgba(0,0,0,.18); margin: 12px 0; }
+    summary { cursor: pointer; font-weight: 800; color: var(--text); }
   </style>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Navigation Bar -->
-  <header class="fixed w-full top-0 right-0 z-50 bg-black bg-opacity-80 shadow-md">
-    <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="../index.html" class="text-yellow-500 font-bold text-2xl">מור זהבי</a>
-      <nav class="space-x-6 space-x-reverse">
-        <a href="../index.html#hero" class="text-white hover:text-yellow-500 transition">ראשי</a>
-        <a href="../index.html#about" class="text-white hover:text-yellow-500 transition">אודות</a>
-        <a href="../index.html#services" class="text-white hover:text-yellow-500 transition">שירותים</a>
-        <a href="../index.html#contact" class="text-white hover:text-yellow-500 transition">צור קשר</a>
-      </nav>
-    </div>
-  </header>
 
-  <main
-    class="pt-28 px-6 pb-16 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10"
-    role="main"
-    aria-labelledby="page-title"
-  >
-    <!-- Sidebar Navigation -->
-    <aside class="lg:w-1/5 hidden lg:block">
-      <div class="sticky top-32 bg-gray-50 p-4 rounded-lg shadow-sm border text-sm">
-        <h3 class="text-lg font-semibold mb-3 text-yellow-600">שירותים נוספים</h3>
-        <ul class="space-y-2 text-gray-700">
-          <li><a href="retirement.html" class="hover:text-yellow-600">תכנון פרישה</a></li>
-          <li><a href="family_office.html" class="hover:text-yellow-600">Family Office</a></li>
-          <li><a href="financial.html" class="hover:text-yellow-600">ניהול פיננסי</a></li>
-        </ul>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="header-cta" href="../index.html#contact">יצירת קשר</a>
+
+    <nav aria-label="ניווט ראשי" class="nav">
+      <a href="../index.html#top">ראשי</a>
+      <a href="../index.html#about">אודות</a>
+      <a href="../index.html#services">השירותים שלנו</a>
+    </nav>
+
+    <a aria-label="מור זהבי" class="brand" href="../index.html#top">
+      <span>
+        <span class="brand-title">מור זהבי</span>
+        <span class="brand-sub">תכנון וליווי פיננסי</span>
+      </span>
+    </a>
+
+    <button aria-expanded="false" aria-label="פתח/סגור תפריט" class="burger" data-burger="" type="button">☰</button>
+  </div>
+
+  <div class="mobile-panel" data-mobile-panel="">
+    <a href="../index.html#top">ראשי</a>
+    <a href="../index.html#about">אודות</a>
+    <a href="../index.html#services">השירותים שלנו</a>
+    <a class="cta" href="../index.html#contact">יצירת קשר</a>
+  </div>
+</header>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+
+    <div class="hero-card service-card-pro" style="padding:28px">
+
+      <!-- Title -->
+      <div class="service-title-wrap">
+        <p class="kicker" style="margin:0 0 8px">השירותים שלנו</p>
+        <h1 class="service-title" id="page-title" style="margin-top:0">השקעות אלטרנטיביות</h1>
+        <p class="service-subtitle">
+         יסודות חזקים נשענים על היכולת לשלב ישן וחדש.
+        </p>
+
       </div>
-    </aside>
 
-    <!-- Main Content -->
-    <section class="lg:w-4/5">
-      <h1 id="page-title" class="text-4xl font-bold text-yellow-600 mb-6 flex items-center gap-2">
-        <i class="ph ph-chart-line" aria-hidden="true"></i>
-        השקעות אלטרנטיביות
-      </h1>
+      <div class="service-divider"></div>
 
-      <p class="text-lg leading-relaxed mb-8 text-gray-700">
-        לצד ההשקעות המסורתיות בשוק ההון, התפתח בשנים האחרונות עולם שלם של השקעות אלטרנטיביות –
-        קרנות, חוב, נדל"ן ועוד. השקעות אלה יכולות לתרום לפיזור ההשקעות, לגיוון מקורות הסיכון וההזדמנות,
-        ולהתאמת מבנה התיק לצרכים ולפרופיל הסיכון של המשקיע.
-      </p>
+      <!-- Intro -->
+      <section class="service-block">
+        <h2 class="service-h">מה זה אומר “השקעות אלטרנטיביות”?</h2>
+        <p class="service-p">
+          לצד ההשקעות המסורתיות בשוק ההון, התפתח בשנים האחרונות עולם שלם של השקעות אלטרנטיביות –
+          קרנות, חוב, נדל&quot;ן ועוד. השקעות אלה יכולות לתרום לפיזור ההשקעות, לגיוון מקורות הסיכון וההזדמנות,
+          ולהתאמת מבנה התיק לצרכים ולפרופיל הסיכון של המשקיע.
+        </p>
+      </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-bank" aria-hidden="true"></i>
-          למה זה חשוב?
-        </h2>
-        <p class="text-lg leading-relaxed text-gray-700">
+      <div class="service-divider soft"></div>
+
+      <!-- Why important -->
+      <section class="service-block">
+        <h2 class="service-h">למה זה חשוב?</h2>
+        <p class="service-p">
           השקעות אלטרנטיביות יכולות לסייע ביצירת תיק השקעות מגוון יותר, עם חשיפה לאפיקים שאינם תלויים רק במדדי מניות
-          ואג"ח. לעיתים מדובר במודלים כלכליים שונים – הכנסות משכירות, ריביות, פרויקטים יזמיים ועוד.
+          ואג&quot;ח. לעיתים מדובר במודלים כלכליים שונים – הכנסות משכירות, ריביות, פרויקטים יזמיים ועוד.
           יחד עם זאת, לכל השקעה יש סיכונים, תנאי השתתפות ומגבלות נזילות שחשוב להבין מראש.
         </p>
       </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-list-checks" aria-hidden="true"></i>
-          סוגי השקעות עיקריים
-        </h2>
-        <ul class="list-disc pr-6 text-gray-700 space-y-2 text-lg">
-          <li>קרנות חוב וקרנות אשראי לחברות או ליזמים</li>
-          <li>קרנות נדל"ן במסלולי חוב, עם ריבית מוגדרת מראש בהתאם להסכמים</li>
-          <li>השקעות נדל"ן במסלולי הון (אקוויטי), הכוללות שותפות בסיכונים ובהכנסות</li>
-          <li>קרנות או מוצרים פיננסיים מובנים בתחומים שונים, בהתאם להסכמי ההשקעה</li>
-        </ul>
+      <div class="service-divider soft"></div>
+
+      <!-- Types -->
+      <section class="service-block">
+        <h2 class="service-h">סוגי השקעות עיקריים</h2>
+        <div class="service-list">
+          <div class="service-li">קרנות חוב וקרנות אשראי לחברות או ליזמים</div>
+          <div class="service-li">קרנות נדל&quot;ן במסלולי חוב, עם ריבית מוגדרת מראש בהתאם להסכמים</div>
+          <div class="service-li">השקעות נדל&quot;ן במסלולי הון (אקוויטי), הכוללות שותפות בסיכונים ובהכנסות</div>
+          <div class="service-li">קרנות או מוצרים פיננסיים מובנים בתחומים שונים, בהתאם להסכמי ההשקעה</div>
+        </div>
       </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-currency-circle-dollar" aria-hidden="true"></i>
-          מה כולל הליווי?
-        </h2>
-        <ul class="list-disc pr-6 text-gray-700 space-y-2 text-lg">
-          <li>בחינת תיק ההשקעות הקיים והבנת פיזור הסיכונים</li>
-          <li>הגדרת צרכים, מטרות ופרופיל סיכון אישי</li>
-          <li>הצגת אפשרויות השקעה אלטרנטיביות בהתאם לפרופיל ולמטרות</li>
-          <li>הבנת נושאי נזילות, משך השקעה ואופי הסיכון בכל אפיק</li>
-          <li>ליווי בתהליך ההצטרפות מול הגופים הרלוונטיים</li>
-          <li>מעקב שוטף ועדכונים בהתאם לשינויים בשוק ובצרכי הלקוח</li>
-        </ul>
+      <div class="service-divider soft"></div>
+
+      <!-- What includes -->
+      <section class="service-block">
+        <h2 class="service-h">מה כולל הליווי?</h2>
+        <div class="service-list">
+          <div class="service-li">בחינת תיק ההשקעות הקיים והבנת פיזור הסיכונים</div>
+          <div class="service-li">הגדרת צרכים, מטרות ופרופיל סיכון אישי</div>
+          <div class="service-li">הצגת אפשרויות השקעה אלטרנטיביות בהתאם לפרופיל ולמטרות</div>
+          <div class="service-li">הבנת נושאי נזילות, משך השקעה ואופי הסיכון בכל אפיק</div>
+          <div class="service-li">ליווי בתהליך ההצטרפות מול הגופים הרלוונטיים</div>
+          <div class="service-li">מעקב שוטף ועדכונים בהתאם לשינויים בשוק ובצרכי הלקוח</div>
+        </div>
       </section>
 
-      <!-- Image Placeholder -->
-      <div class="w-full h-72 bg-gray-100 flex items-center justify-center rounded-lg mb-10">
-        <span class="text-gray-400">כאן תופיע תמונה או תרשים השקעות בעתיד 📊</span>
+      <div class="service-divider"></div>
+
+      <!-- Steps -->
+      <section class="service-block">
+        <h2 class="service-h">שלבי התהליך</h2>
+
+        <div class="service-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <div class="step-title">היכרות והגדרת מטרות</div>
+              <div class="step-text">הבנת הצרכים, טווח הזמן, מגבלות נזילות ופרופיל הסיכון.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <div class="step-title">מיפוי תיק קיים</div>
+              <div class="step-text">ניתוח פיזור התיק הנוכחי, איזון סיכונים והשלכות מיסוי כלליות.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <div class="step-title">בחירת אפיקים מתאימים</div>
+              <div class="step-text">הצגת חלופות אלטרנטיביות רלוונטיות + הסבר תנאים, סיכונים ונזילות.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <div class="step-title">ליווי בהצטרפות ומעקב</div>
+              <div class="step-text">סיוע בתהליך ההצטרפות ומעקב תקופתי בהתאם לשינויים בשוק ובצרכים.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="service-divider"></div>
+
+      <!-- FAQ -->
+      <section class="service-block">
+        <h2 class="service-h">שאלות נפוצות</h2>
+
+        <details class="service-faq">
+          <summary>מה ההבדל העיקרי מול שוק ההון?</summary>
+          <p>לעיתים מדובר באפיקים עם מודל תשואה שונה (ריבית/שכירות/פרויקטים), ולעיתים גם עם מגבלות נזילות ותנאים ייחודיים.</p>
+        </details>
+
+        <details class="service-faq">
+          <summary>האם זה מתאים לכל אחד?</summary>
+          <p>לא תמיד. התאמה נקבעת לפי מטרות, טווח זמן, נזילות נדרשת ויכולת ספיגת סיכון. לכן מתחילים באבחון מסודר.</p>
+        </details>
+
+        <details class="service-faq">
+          <summary>מה חשוב לבדוק לפני כניסה להשקעה?</summary>
+          <p>תנאי ההסכם, רמת הסיכון, משך ההשקעה, מנגנוני יציאה, עלויות ודמי ניהול, והבנה של התרחישים האפשריים.</p>
+        </details>
+      </section>
+
+      <div class="service-divider"></div>
+
+      <div class="service-cta">
+        <a class="btn primary" href="../index.html#contact">לתיאום פגישה</a>
+        <a class="btn" href="../index.html#services">חזרה לשירותים</a>
       </div>
 
-      <!-- Call to Action -->
-      <div class="text-center mt-12">
-        <a href="../index.html#contact"
-           class="inline-block px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-full hover:bg-yellow-600 transition">
-          קבעו פגישת ליווי אישי
-        </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center;">
+      <div>© כל הזכויות שמורות ל־מור זהבי</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="../footer-pages/privacy.html">מדיניות פרטיות</a>
+        <a href="../footer-pages/terms.html">תנאי שימוש</a>
+        <a href="../footer-pages/accessibility.html">הצהרת נגישות</a>
+        <a href="../footer-pages/disclaimer.html">גילוי נאות</a>
       </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="text-center text-sm py-6 text-gray-500 bg-white border-t">
-    <div>© 2025 מור זהבי. כל הזכויות שמורות.</div>
-
-    <div class="mt-2 text-xs text-gray-600 leading-relaxed">
-      <p>
-        מור זהבי פועל כסוכן בתחום הפיננסי במסגרת בית הסוכן "יסודות פיננסים".
-      </p>
-      <p class="mt-1">
-        מספר הרישיון יפורסם באתר לאחר קבלתו מרשות שוק ההון.
-      </p>
     </div>
+  </div>
+</footer>
 
-    <div class="mt-3 text-xs space-x-4 space-x-reverse">
-      <a href="../privacy.html" class="hover:text-yellow-600">מדיניות פרטיות</a> |
-      <a href="../accessibility.html" class="hover:text-yellow-600">הצהרת נגישות</a> |
-      <a href="../terms.html" class="hover:text-yellow-600">תנאי שימוש</a> |
-      <a href="../disclaimer.html" class="hover:text-yellow-600">דיסקליימר וגילוי נאות</a>
-    </div>
-  </footer>
-
+<script src="../assets/site.js"></script>
 </body>
 </html>

@@ -1,206 +1,198 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html dir="rtl" lang="he">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>תכנון פרישה - מור זהבי</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="../assets/site.css" rel="stylesheet"/>
+
   <style>
-    body { font-family: 'Alef', sans-serif; }
-    summary { cursor: pointer; }
+    /* Small tweaks for legacy markup */
+    ul { color: var(--muted); line-height:1.9; }
+    li { margin-bottom:8px; }
+    details { border:1px solid rgba(255,255,255,.10); border-radius:16px; padding:14px 16px; background: rgba(0,0,0,.18); margin:12px 0; }
+    summary { cursor:pointer; font-weight:800; color: var(--text); }
   </style>
 </head>
-<body class="bg-white text-gray-800">
 
-  <!-- Navigation Bar -->
-  <header class="fixed w-full top-0 right-0 z-50 bg-black bg-opacity-80 shadow-md">
-    <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="../index.html" class="text-yellow-500 font-bold text-2xl">מור זהבי</a>
-      <nav class="space-x-6 space-x-reverse">
-        <a href="../index.html#hero" class="text-white hover:text-yellow-500 transition">ראשי</a>
-        <a href="../index.html#about" class="text-white hover:text-yellow-500 transition">אודות</a>
-        <a href="../index.html#services" class="text-white hover:text-yellow-500 transition">שירותים</a>
-        <a href="../index.html#contact" class="text-white hover:text-yellow-500 transition">צור קשר</a>
-      </nav>
-    </div>
-  </header>
+<body>
 
-  <main
-    class="pt-28 px-6 pb-16 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10"
-    role="main"
-    aria-labelledby="page-title"
-  >
-    <!-- Sidebar Navigation -->
-    <aside class="lg:w-1/5 hidden lg:block">
-      <div class="sticky top-32 bg-gray-50 p-4 rounded-lg shadow-sm border text-sm">
-        <h3 class="text-lg font-semibold mb-3 text-yellow-600">שירותים נוספים</h3>
-        <ul class="space-y-2 text-gray-700">
-          <li><a href="family_office.html" class="hover:text-yellow-600">Family Office</a></li>
-          <li><a href="investments.html" class="hover:text-yellow-600">השקעות אלטרנטיביות</a></li>
-          <li><a href="financial.html" class="hover:text-yellow-600">ניהול פיננסי</a></li>
-        </ul>
+<header class="header">
+  <div class="container header-inner">
+    <a class="header-cta" href="../index.html#contact">יצירת קשר</a>
+
+    <nav aria-label="ניווט ראשי" class="nav">
+      <a href="../index.html#top">ראשי</a>
+      <a href="../index.html#about">אודות</a>
+      <a href="../index.html#services">השירותים שלנו</a>
+    </nav>
+
+    <a aria-label="מור זהבי" class="brand" href="../index.html#top">
+      <span>
+        <span class="brand-title">מור זהבי</span>
+        <span class="brand-sub">תכנון וליווי פיננסי</span>
+      </span>
+    </a>
+
+    <button aria-expanded="false" aria-label="פתח/סגור תפריט" class="burger" data-burger="" type="button">☰</button>
+  </div>
+
+  <div class="mobile-panel" data-mobile-panel="">
+    <a href="../index.html#top">ראשי</a>
+    <a href="../index.html#about">אודות</a>
+    <a href="../index.html#services">השירותים שלנו</a>
+    <a class="cta" href="../index.html#contact">יצירת קשר</a>
+  </div>
+</header>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+
+    <div class="hero-card service-card-pro" style="padding:28px">
+
+      <div class="service-title-wrap">
+        <p class="kicker" style="margin:0 0 8px">השירותים שלנו</p>
+        <h1 class="service-title" id="page-title" style="margin-top:0">תכנון פרישה</h1>
+        <p class="service-subtitle">
+         ביחד נבנה יסודות לעתיד כלכלי יציב במציאות משתנה.
+        </p>
       </div>
-    </aside>
 
-    <!-- Main Content -->
-    <section class="lg:w-4/5">
-      <h1 id="page-title" class="text-4xl font-bold text-yellow-600 mb-6 flex items-center gap-2">
-        <i class="ph ph-user-circle" aria-hidden="true"></i>
-        תכנון פרישה
-      </h1>
+      <div class="service-divider"></div>
 
-      <!-- Placeholder for a future professional photo -->
-      <div class="w-full h-72 bg-gray-100 flex items-center justify-center rounded-lg mb-10">
-        <span class="text-gray-400">כאן תופיע תמונה מקצועית בעתיד 📸</span>
-      </div>
-
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-calendar-check" aria-hidden="true"></i>
-          רגע הפרישה מתקרב
-        </h2>
-        <p class="text-lg leading-relaxed text-gray-700">
+      <section class="service-block">
+        <h2 class="service-h">רגע הפרישה מתקרב</h2>
+        <p class="service-p">
           לצד ההתרגשות על תחילת פרק חדש, מתעוררות גם שאלות רבות: מה יהיה גובה ההכנסה החודשית? מה עושים עם הפיצויים?
           איך מממשים את הזכויות בצורה יעילה? תכנון נכון יכול לסייע להפחית חוסר ודאות ולהעניק ביטחון לשנים רבות.
         </p>
       </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-piggy-bank" aria-hidden="true"></i>
-          מה צברתם עד היום?
-        </h2>
-        <p class="text-lg leading-relaxed text-gray-700">
+      <div class="service-divider soft"></div>
+
+      <section class="service-block">
+        <h2 class="service-h">מה צברתם עד היום?</h2>
+        <p class="service-p">
           במהלך שנות העבודה צברתם חסכונות וזכויות: קרנות פנסיה, קופות גמל, ביטוחי מנהלים, קרנות השתלמות, פיצויים ועוד.
           לכל החלטה – דחייה, משיכה, המרה לקצבה – יש השלכות מס, השפעה על גובה ההכנסה העתידית ולעיתים גם על בני הזוג והיורשים.
           לכן חשוב להבין את התמונה המלאה לפני שמקבלים החלטות.
         </p>
       </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-hands-clapping" aria-hidden="true"></i>
-          איך אנחנו מלווים אתכם?
-        </h2>
-        <ul class="list-disc pr-5 text-lg space-y-2 text-gray-700">
-          <li>איסוף הנתונים מכל הגופים הפנסיוניים והפיננסיים</li>
-          <li>בניית תמונת מצב מרוכזת של ההכנסות והחסכונות</li>
-          <li>בחינת היבטי מס, מימוש זכויות והאפשרויות העומדות לרשותכם</li>
-          <li>בניית תכנית פרישה מותאמת ליעדים האישיים ולמצב המשפחתי</li>
-          <li>ליווי בתהליך היישום מול הגופים הרלוונטיים</li>
-        </ul>
+      <div class="service-divider soft"></div>
+
+      <section class="service-block">
+        <h2 class="service-h">איך אנחנו מלווים אתכם?</h2>
+        <div class="service-list">
+          <div class="service-li">איסוף הנתונים מכל הגופים הפנסיוניים והפיננסיים</div>
+          <div class="service-li">בניית תמונת מצב מרוכזת של ההכנסות והחסכונות</div>
+          <div class="service-li">בחינת היבטי מס, מימוש זכויות והאפשרויות העומדות לרשותכם</div>
+          <div class="service-li">בניית תכנית פרישה מותאמת ליעדים האישיים ולמצב המשפחתי</div>
+          <div class="service-li">ליווי בתהליך היישום מול הגופים הרלוונטיים</div>
+        </div>
       </section>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-users-three" aria-hidden="true"></i>
-          העברה בין דורית
-        </h2>
-        <p class="text-lg leading-relaxed text-gray-700">
+      <div class="service-divider soft"></div>
+
+      <section class="service-block">
+        <h2 class="service-h">העברה בין דורית</h2>
+        <p class="service-p">
           עבור רבים, הפרישה היא גם הזמן לחשוב על הדור הבא. במסגרת התכנון אפשר להתייחס להעברת נכסים בין דורות,
           לתמיכה בילדים ולשילוב שיקולים משפחתיים. במידת הצורך, נעשה זאת בשיתוף גורמים משפטיים ורלוונטיים נוספים.
         </p>
       </section>
 
-      <!-- Timeline Section -->
-      <section class="mb-16">
-        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-          <i class="ph ph-timer" aria-hidden="true"></i>
-          שלבי התהליך
-        </h2>
-        <ol class="border-r-4 border-yellow-400 pr-6 space-y-6">
-          <li class="relative">
-            <span class="absolute right-[-16px] top-2 w-3 h-3 bg-yellow-500 rounded-full border border-white"></span>
-            <h3 class="font-bold text-lg text-gray-800">שיחת היכרות</h3>
-            <p class="text-gray-600">פגישה ראשונית להבנת הצרכים, ציפיות הפרישה והמצב המשפחתי.</p>
-          </li>
-          <li class="relative">
-            <span class="absolute right-[-16px] top-2 w-3 h-3 bg-yellow-500 rounded-full border border-white"></span>
-            <h3 class="font-bold text-lg text-gray-800">איסוף נתונים</h3>
-            <p class="text-gray-600">איסוף כלל המידע הפנסיוני והפיננסי מכל הגופים הרלוונטיים.</p>
-          </li>
-          <li class="relative">
-            <span class="absolute right-[-16px] top-2 w-3 h-3 bg-yellow-500 rounded-full border border-white"></span>
-            <h3 class="font-bold text-lg text-gray-800">בניית תכנית פרישה</h3>
-            <p class="text-gray-600">בניית תכנית מותאמת אישית הכוללת חלופות שונות והשלכותיהן.</p>
-          </li>
-          <li class="relative">
-            <span class="absolute right-[-16px] top-2 w-3 h-3 bg-yellow-500 rounded-full border border-white"></span>
-            <h3 class="font-bold text-lg text-gray-800">ליווי ביישום</h3>
-            <p class="text-gray-600">ליווי בתהליך היישום מול הגופים, בהתאם לבחירות שלכם.</p>
-          </li>
-        </ol>
-      </section>
+      <div class="service-divider"></div>
 
-      <!-- Video Placeholder -->
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4 flex items-center gap-2">
-          <i class="ph ph-video" aria-hidden="true"></i>
-          הסבר וידאו
-        </h2>
-        <div class="w-full h-64 bg-gray-200 flex items-center justify-center text-gray-500 rounded-md">
-          כאן יוטמע סרטון הסבר על תהליך תכנון הפרישה 🎥
+      <section class="service-block">
+        <h2 class="service-h">שלבי התהליך</h2>
+
+        <div class="service-steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <div class="step-title">שיחת היכרות</div>
+              <div class="step-text">פגישה ראשונית להבנת הצרכים, ציפיות הפרישה והמצב המשפחתי.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <div class="step-title">איסוף נתונים</div>
+              <div class="step-text">איסוף כלל המידע הפנסיוני והפיננסי מכל הגופים הרלוונטיים.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <div class="step-title">בניית תכנית פרישה</div>
+              <div class="step-text">בניית תכנית מותאמת אישית הכוללת חלופות שונות והשלכותיהן.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <div class="step-title">ליווי ביישום</div>
+              <div class="step-text">ליווי בתהליך היישום מול הגופים, בהתאם לבחירות שלכם.</div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- FAQ Section -->
-      <section class="mb-16">
-        <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-          <i class="ph ph-question" aria-hidden="true"></i>
-          שאלות נפוצות
-        </h2>
-        <details class="mb-4 bg-gray-50 p-4 rounded-md shadow-sm">
-          <summary class="font-semibold">האם כדאי להתחיל תכנון פרישה עוד לפני מועד הפרישה?</summary>
-          <p class="mt-2 text-gray-700">
-            במקרים רבים, תכנון מוקדם מאפשר היערכות טובה יותר, ניצול אפשרויות שונות והתאמת התהליך למועד הפרישה הרצוי.
-          </p>
+      <div class="service-divider"></div>
+
+      <section class="service-block">
+        <h2 class="service-h">שאלות נפוצות</h2>
+
+        <details class="service-faq">
+          <summary>האם כדאי להתחיל תכנון פרישה עוד לפני מועד הפרישה?</summary>
+          <p>במקרים רבים, תכנון מוקדם מאפשר היערכות טובה יותר, ניצול אפשרויות שונות והתאמת התהליך למועד הפרישה הרצוי.</p>
         </details>
-        <details class="mb-4 bg-gray-50 p-4 rounded-md shadow-sm">
-          <summary class="font-semibold">האם השירות מתאים גם לעצמאים?</summary>
-          <p class="mt-2 text-gray-700">
-            בהחלט. אצל עצמאים מבנה החסכונות וההפרשות שונה, ולכן חשוב לבצע התאמות בהתאם לאופי ההכנסה והחסכונות.
-          </p>
+
+        <details class="service-faq">
+          <summary>האם השירות מתאים גם לעצמאים?</summary>
+          <p>בהחלט. אצל עצמאים מבנה החסכונות וההפרשות שונה, ולכן חשוב לבצע התאמות בהתאם לאופי ההכנסה והחסכונות.</p>
         </details>
-        <details class="bg-gray-50 p-4 rounded-md shadow-sm">
-          <summary class="font-semibold">האם הליווי נמשך גם לאחר מועד הפרישה?</summary>
-          <p class="mt-2 text-gray-700">
-            ניתן להמשיך ליווי גם לאחר מועד הפרישה, בהתאם לצורך ולשינויים המתרחשים לאורך השנים.
-          </p>
+
+        <details class="service-faq">
+          <summary>האם הליווי נמשך גם לאחר מועד הפרישה?</summary>
+          <p>ניתן להמשיך ליווי גם לאחר מועד הפרישה, בהתאם לצורך ולשינויים המתרחשים לאורך השנים.</p>
         </details>
       </section>
 
-      <!-- Call to Action -->
-      <div class="text-center mt-12">
-        <a href="../index.html#contact"
-           class="inline-block px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-full hover:bg-yellow-600 transition">
-          קבעו פגישת תכנון פרישה
-        </a>
+      <div class="service-divider"></div>
+
+      <div class="service-cta">
+        <a class="btn primary" href="../index.html#contact">לתיאום פגישה</a>
+        <a class="btn" href="../index.html#services">חזרה לשירותים</a>
       </div>
-    </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="text-center text-sm py-6 text-gray-500 bg-white border-t">
-    <div>© 2025 מור זהבי. כל הזכויות שמורות.</div>
-
-    <div class="mt-2 text-xs text-gray-600 leading-relaxed">
-      <p>
-        מור זהבי פועל כסוכן בתחום הפיננסי במסגרת בית הסוכן "יסודות פיננסים".
-      </p>
-      <p class="mt-1">
-        מספר הרישיון יפורסם באתר לאחר קבלתו מרשות שוק ההון.
-      </p>
     </div>
 
-    <div class="mt-3 text-xs space-x-4 space-x-reverse">
-      <a href="../privacy.html" class="hover:text-yellow-600">מדיניות פרטיות</a> |
-      <a href="../accessibility.html" class="hover:text-yellow-600">הצהרת נגישות</a> |
-      <a href="../terms.html" class="hover:text-yellow-600">תנאי שימוש</a> |
-      <a href="../disclaimer.html" class="hover:text-yellow-600">דיסקליימר וגילוי נאות</a>
-    </div>
-  </footer>
+  </div>
+</section>
 
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center;">
+      <div>© כל הזכויות שמורות ל־מור זהבי</div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="../footer-pages/privacy.html">מדיניות פרטיות</a>
+        <a href="../footer-pages/terms.html">תנאי שימוש</a>
+        <a href="../footer-pages/accessibility.html">הצהרת נגישות</a>
+        <a href="../footer-pages/disclaimer.html">גילוי נאות</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
 </body>
 </html>
