@@ -853,32 +853,47 @@ body.no-scroll{
     display: none !important;
   }
 
+  .header-inner{
+    justify-content: flex-end;
+  }
+
+  .header .brand{
+    order: 2;
+    margin-inline-start: 0;
+    text-align: right;
+  }
+
   .header .burger{
+    order: 1;
     display: inline-flex !important;
   }
 }
 
-/* Mobile panel as full-screen overlay (prevents "white strip" + weird widths) */
+/* Mobile panel under the header (keeps brand visible, smaller menu) */
 .mobile-panel{
-  position: fixed;
-  inset: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   background: var(--blue);
-  z-index: 1100;
+  border-top: 1px solid rgba(255,255,255,.12);
+  z-index: 900;
 
-  /* keep header visible, panel starts under it */
-  padding-top: 78px;
-
-  /* closed by default */
-  transform: translateX(-105%);
-  transition: transform .18s ease;
-
-  /* allow scroll inside menu */
+  max-height: calc(100vh - 78px);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+
+  /* closed by default */
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .18s ease, opacity .18s ease;
 }
 
 .mobile-panel.show{
-  transform: translateX(0);
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .mobile-panel a{
