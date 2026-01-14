@@ -25,6 +25,7 @@
     if(e.key === 'Escape') setOpen(false);
   });
 })();
+
 (function(){
   const el = document.getElementById('rotating-word');
   if(!el) return;
@@ -62,4 +63,24 @@
     }
   }
   tick();
+})();
+
+(function () {
+  const form = document.querySelector('form[action="https://formspree.io/f/manoyjzq"]');
+  if (!form) return;
+
+  form.addEventListener('submit', () => {
+    const name  = (document.getElementById('fullName')?.value || '').trim();
+    const phone = (document.getElementById('phone')?.value || '').trim();
+    const email = (document.getElementById('email')?.value || '').trim();
+
+    // unique subject => prevents Gmail threading
+    const ts = new Date().toISOString().slice(0, 19).replace('T', ' ');
+    const subjectField = document.getElementById('subjectField');
+    if (subjectField) subjectField.value = `פנייה חדשה – ${name} – ${phone} – ${ts}`;
+
+    // reply-to should be the user's email
+    const replyToField = document.getElementById('replyToField');
+    if (replyToField) replyToField.value = email;
+  });
 })();

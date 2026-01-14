@@ -189,10 +189,10 @@
       <!-- ימין: הכרטיסיה (טופס בלבד) -->
       <form action="https://formspree.io/f/manoyjzq" class="form" method="POST">
 
-        <input type="hidden" name="_subject" value="פנייה חדשה – %name% – %phone%">
-        <input type="hidden" name="_replyto" value="%email%">
+        <input type="hidden" name="_subject" id="subjectField" value="">
+        <input type="hidden" name="_replyto" id="replyToField" value="">
         <input type="hidden" name="_language" value="he">
-        
+
         <div class="grid-2">
           <div class="field">
             <label for="fullName">שם מלא</label>
@@ -228,7 +228,7 @@
         </div>
 
         <label class="checkbox" style="margin-top:10px">
-          <input required type="checkbox"/>
+          <input required type="checkbox" />
           <span class="checkbox-text">
             אני מאשר/ת את
             <a href="footer-pages/privacy.html" style="color:var(--blue); font-weight:900;">מדיניות הפרטיות</a>
@@ -250,17 +250,17 @@
 
 
 <footer class="footer">
-<div class="container">
-<div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center;">
-<div>© כל הזכויות שמורות ל־מור זהבי</div>
-<div style="display:flex; gap:14px; flex-wrap:wrap;">
-<a href="footer-pages/privacy.html">מדיניות פרטיות</a>
-<a href="footer-pages/terms.html">תנאי שימוש</a>
-<a href="footer-pages/accessibility.html">הצהרת נגישות</a>
-<a href="footer-pages/disclaimer.html">גילוי נאות</a>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copy">© כל הזכויות שמורות ל־מור זהבי</div>
+      <div class="footer-links">
+        <a href="footer-pages/privacy.html">מדיניות פרטיות</a>
+        <a href="footer-pages/terms.html">תנאי שימוש</a>
+        <a href="footer-pages/accessibility.html">הצהרת נגישות</a>
+        <a href="footer-pages/disclaimer.html">גילוי נאות</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="assets/site.js"></script>

@@ -442,14 +442,19 @@ textarea{min-height:130px;resize:vertical}
 /* checkbox */
 label.checkbox{
   display:flex;
+  flex-direction:row-reverse;
   align-items:flex-start;
   gap:10px;
-  line-height:1.45;
+  line-height:1.55;
   width:100%;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
 }
 label.checkbox input{margin-top:4px;flex:0 0 auto}
-label.checkbox .checkbox-text{flex:1 1 260px; min-width:0}
+label.checkbox .checkbox-text{
+  flex:1 1 auto;
+  min-width:0;
+  text-align:right;
+}
 
 /* =========================
    11) Contact section (Y-F style)
@@ -604,6 +609,21 @@ label.checkbox .checkbox-text{flex:1 1 260px; min-width:0}
 }
 .footer a{color:#fff;opacity:.95}
 .footer a:hover{opacity:1;text-decoration:underline}
+.footer-inner{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  text-align:center;
+}
+.footer-copy{font-weight:800}
+.footer-links{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+}
 
 /* =========================
    13) Inner pages (footer-pages + service pages header)
@@ -913,4 +933,29 @@ body.no-scroll{
 /* prevent background scroll when menu open */
 body.no-scroll{
   overflow: hidden;
+}
+
+/* Fix checkbox layout in contact form */
+label.checkbox{
+  display:flex;
+  flex-direction:row;      /* checkbox then text */
+  align-items:flex-start;
+  gap:10px;
+  direction:rtl;           /* עברית טבעית */
+  text-align:right;
+}
+
+/* IMPORTANT: override global input width/padding for checkbox */
+label.checkbox input[type="checkbox"]{
+  width:auto !important;
+  padding:0 !important;
+  border-radius:4px;
+  margin:4px 0 0 0;
+  flex:0 0 auto;
+}
+
+/* keep text taking the remaining space */
+label.checkbox .checkbox-text{
+  flex:1 1 auto;
+  min-width:0;
 }
