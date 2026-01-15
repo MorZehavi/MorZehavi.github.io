@@ -959,3 +959,18 @@ label.checkbox .checkbox-text{
   flex:1 1 auto;
   min-width:0;
 }
+.quote p,
+.quote strong {
+  color: var(--blue) !important;
+}
+/* Service pages CTA buttons: stack on mobile */
+@media (max-width: 540px){
+  .service-cta{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .service-cta .btn{
+    width: 100%;
+    justify-content: center;
+  }
+}
