@@ -30,7 +30,7 @@
   const el = document.getElementById('rotating-word');
   if(!el) return;
 
-  const words = ['אתה','את','המשפחה שלך'];
+  const words = ['הבטחון שלך','המשפחה שלך','השליטה שלך'];
   let w = 0;
   let i = 0;
   let deleting = false;
