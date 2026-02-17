@@ -591,9 +591,9 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
   flex-wrap: wrap;
   text-align: center;
+  flex-direction: column;
 }
 
 .band-inner h3 {
